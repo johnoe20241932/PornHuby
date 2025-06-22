@@ -1,0 +1,17 @@
+services:
+  - type: web
+      name: PornHub
+          env: python
+              plan: free
+                  region: oregon
+                      buildCommand: "pip install -r requirements.txt"
+                          startCommand: "python -m PornHub"
+                              envVars:
+                                    - key: API_ID
+                                            value: ${API_ID}
+                                                  - key: API_HASH
+                                                          value: ${API_HASH}
+                                                                - key: TOKEN
+                                                                        value: ${TOKEN}
+                                                                              - key: MONGO_URL
+                                                                                      value: ${MONGO_URL}
