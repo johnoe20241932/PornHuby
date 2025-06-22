@@ -20,4 +20,4 @@ jobs:
         pip install -r requirements.txt
     
     - name: Run pyhyff
-      run: python -m PornHub
+      run: python -m PornHubl
